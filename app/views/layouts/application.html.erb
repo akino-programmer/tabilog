@@ -1,12 +1,32 @@
  <!DOCTYPE html>
   <html>
     <head>
-      <title>PicTweet</title>
+      <title>たびフォト</title>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
     </head>
+
     <body>
+      <header class= "header">
+        <div class= "header__bar">
+          <ul class="gmenu">
+                <li class="logo" style="float: left">
+                  <a href="/">たびフォト</a>
+                </li>
+                <li class="entry_button" style="float: right">
+                  <%= link_to 'サインアウト', "/users/sign_out", method: :delete %>
+                </li>
+                <li class="entry_button" style="float: right">
+                  <a href="products/search">投稿する</a>
+                </li>
+              </ul>
+</div>
+</div>
+
+</header>
+
+
 
     <%= yield %>
 
