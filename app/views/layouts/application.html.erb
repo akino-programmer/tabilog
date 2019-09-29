@@ -8,25 +8,22 @@
     </head>
 
     <body>
-      <header class= "header">
-        <div class= "header__bar">
-          <ul class="gmenu">
-                <li class="logo" style="float: left">
-                  <a href="/">たびフォト</a>
-                </li>
-                <li class="entry__button" style="float: right">
-                  <%= link_to 'サインアウト', "/users/sign_out", method: :delete %>
-                </li>
-                <li class="post__button" style="float: right">
-                  <a href="tweets/new">投稿する</a>
-                </li>
-              </ul>
-</div>
-</div>
-
-</header>
-
-
+<header class="header">
+    <div class="header__bar">
+      <h1 class="head__bar__title"><a href="/">たびフォト</a></h1>
+      <% if user_signed_in? %>
+        <div class="head__bar__right__side">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+          <a class="post" href="/tweets/new">投稿する</a>
+        </div>
+      <% else %>
+        <div class="head__bar__right__side">
+          <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+          <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+        </div>
+      <% end %>
+    </div>
+  </header>
 
     <%= yield %>
 
