@@ -10,17 +10,14 @@ a {
   background-color: rgb(91, 141, 235);
   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
   line-height: 50px;
-
+  clear:both;
 }
-ul {
-  list-style: none;
+.head__bar__title{
+  float: left;
+  margin: 0;
 }
-.logo{
-  font-size: 30px;
-  line-height: 50px;
-  text-decoration: none;
-}
-.post__button{
+.head__bar__right__side{
+  float: right;
   padding: 0px 10px;
 }
 
