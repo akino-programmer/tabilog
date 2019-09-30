@@ -2,6 +2,12 @@
 <div class="container">
     <% @tweets.each do |tweet| %>
       <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+        <% if user_signed_in? && current_user.id == tweet.user_id %>
+            <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+        <% end %>
+       
+       
+       
         <%= simple_format(tweet.text) %>
         <span>投稿者</span><%= tweet.user.nickname %>
       </div>
