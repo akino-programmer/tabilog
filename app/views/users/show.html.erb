@@ -1,11 +1,14 @@
-  <div class="contents__row">
+<div class="contents__row">
 <div class="container">
+
+<%# <div class="contents row" > %>
+    <p><%= @nickname %>さんの投稿一覧</p>
     <% @tweets.each do |tweet| %>
       <div class="content_post" style="background-image: url(<%= tweet.image %>);">
         <%= simple_format(tweet.text) %>
         <span class="name"><%= tweet.name %></span>
       </div>
     <% end %>
-   <%= paginate(@tweets) %>
+    <%= paginate(@tweets) %>
   </div>
     </div>
