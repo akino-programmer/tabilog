@@ -1,5 +1,5 @@
 a {
-	text-decoration: none ;
+  text-decoration: none ;
 }
 
 ul {
@@ -37,6 +37,11 @@ body {
   line-height: 50px;
   clear:both;
 }
+
+.header__bar a{
+  color: #fff;
+}
+
 .head__bar__title{
   float: left;
   margin: 0;
@@ -47,7 +52,31 @@ body {
   text-align: right;
 }
 
+.head__bar__right__side a{
+  padding: 0px 10px;
+    font-size: 14px;
+    border: 2px solid #57c3e9;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #57c3e9;
+}
 
+.post {
+  padding: 0px 10px;
+    font-size: 14px;
+    border: 2px solid #57c3e9;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #57c3e9;
+}
 
 
 // メインビュー画面
@@ -61,7 +90,6 @@ body {
 
 // 投稿画面
 .contents__row{
-  // position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
