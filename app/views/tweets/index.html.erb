@@ -21,7 +21,7 @@
        
        
         <%= simple_format(tweet.text) %>
-        <span>投稿者</span><%= tweet.user.nickname %>
+        <span class="name">投稿者：<%= tweet.user.nickname %></span>
       </div>
     <% end %>
    <%= paginate(@tweets) %>
