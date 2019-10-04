@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <title>フォトこめ</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
+
+    <body>
+
+<div class="top-page">
+
+
+<header class="header">
+    <div class="header__title">
+      <h1 class="head__title__left">ポートフォリオ紹介</h1>
+        <div class="head__title__right__side">
+   　    　<%= link_to "ポートフォリオページへ", tweets_path, method: :get, class: "product__page" %>
+        </div>
+    </div>
+  </header>
+<%# <div class="title">
+  <div class="title__left">
+   <h1>ポートフォリオ作品紹介</h1>
+    <div class="title__right">
+
+   　　<%= link_to "作品へ", tweets_path, method: :get, class: "product__page" %>
+  <%# </div>
+
+  </div>
+</div> %>
+
+
+
+
+<div class="left__content">
+
+<h2>作品名：フォトこめ</h2>
+
+<%= image_tag "product-view.jpg", class: "image__top" %>
+
+
+</div>
+
+
+
+
+
+
+<div class="right__content">
+
+<p>Find me in app/views/top/index.html.erb</p>
+
+</div>
+
+
+
+
+
+  </div>
+
+</div>
+</body>

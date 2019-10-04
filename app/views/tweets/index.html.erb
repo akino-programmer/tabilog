@@ -2,7 +2,6 @@
 <div class="container">
     <% @tweets.each do |tweet| %>
       <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-        <%# <% if user_signed_in? && current_user.id == tweet.user_id %>
           <ul class="more_list">
              <li>
               <%= link_to '詳細', "/tweets/#{tweet.id}", method: :get %>
