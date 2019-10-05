@@ -11,13 +11,12 @@ padding: 15px;
   clear:both;
 }
 
-
 .head__title__left{
   float: left;
   margin: 0;
   padding: 0px 10px;
-
 }
+
 .head__title__right__side{
   float: right;
   padding: 0px 10px;
@@ -35,19 +34,18 @@ padding: 15px;
     background-color: #57c3e9;
 }
 
-
-
-
 .left__content{
   height: auto;
   width: 50%;
   float: left;
+  padding-left: 20px;
 }
 
 h2{
   font-size: 20px;
   padding: 0px 10px;
 }
+
 .image__top{
   width: 685px;
   height: 400px;
@@ -56,6 +54,7 @@ h2{
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(41,41,41,0.3);
 }
+
 .image__under{
   width: 230px;
   height: 200px;
@@ -67,6 +66,25 @@ h2{
 
 .right__content{
   height: auto;
-  width: 50%;
+  width: 35%;
   float: left;
+  padding-left: 120px;
+}
+
+.right__content__middle1{
+  height: 210px
+}
+
+p{
+  margin: 0px;
+}
+
+h4{
+  margin: 10px 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.right__content__middle3{
+  margin: 55px 0px;
 }
