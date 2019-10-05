@@ -1,0 +1,90 @@
+.title{
+margin: 20px 0;
+padding: 15px;
+}
+
+.header__title{
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(41,41,41,0.3);
+  line-height: 50px;
+  clear:both;
+}
+
+.head__title__left{
+  float: left;
+  margin: 0;
+  padding: 0px 10px;
+}
+
+.head__title__right__side{
+  float: right;
+  padding: 0px 10px;
+  text-align: right;
+}
+
+.head__title__right__side a{
+  padding: 0px 10px;
+    border: 2px solid #57c3e9;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #57c3e9;
+}
+
+.left__content{
+  height: auto;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+
+h2{
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.image__top{
+  width: 685px;
+  height: 400px;
+  margin: 0px 10px;
+  text-align:center;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(41,41,41,0.3);
+}
+
+.image__under{
+  width: 230px;
+  height: 200px;
+  margin: 40px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(41,41,41,0.3);
+}
+
+.right__content{
+  height: auto;
+  width: 35%;
+  float: left;
+  padding-left: 120px;
+}
+
+.right__content__middle1{
+  height: 210px
+}
+
+p{
+  margin: 0px;
+}
+
+h4{
+  margin: 10px 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.right__content__middle3{
+  margin: 55px 0px;
+}
