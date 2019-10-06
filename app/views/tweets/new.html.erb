@@ -1,12 +1,14 @@
 <div class="contents__row">
   <div class="container">
-    <%= form_tag('/tweets', method: :post) do %>
+    <%= form_for :post, url: '/tweets' do |f| %>
       <h3>
         投稿する
       </h3>
-    <input placeholder="Image Url" type="text" name="image">
+    <p><%=f.label "画像をアップロード" %><br><%= f.file_field :image, name:"image" %></p>
+    <%# <input placeholder="Image Url" type="text" name="image"> %>
     <textarea cols="30" name="text" placeholder="text" rows="10"></textarea>
-    <input type="submit" value="SENT">
+    <p><%=f.submit value: "SENT" %></p>
+    <%# <input type="submit" value="SENT"> %>
     <% end %>
   </div>
 </div>
