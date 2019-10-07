@@ -89,13 +89,17 @@ h4{
   margin: 55px 0px;
 }
 
+.right__content__under{
+  position: relative;
+}
+
 .image__face{
   width: 90px;
   height: 120px;
   float: right;
   position: absolute;
-  bottom: 50px;
-  right: 100px;
+  bottom: -2px;
+  right: 40px;
   border-radius: 45px;
   box-shadow: 0 0 10px rgba(41,41,41,0.3);
 }
