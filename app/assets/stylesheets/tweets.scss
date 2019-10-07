@@ -79,12 +79,10 @@ body {
 }
 
 
-// メインビュー画面
 .content_post{
   height: 400px;
   width: 600px;
   margin: 20px 0;
-  // object-fit: cover;
   position: relative;
   background-size:contain;                               /* 画像のサイズを指定    */
   background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
@@ -92,7 +90,6 @@ body {
   box-shadow: 0 0 10px rgba(41,41,41,0.3) 
 }
 
-// 投稿画面
 .contents__row{
   width: 100%;
   margin-left: auto;
@@ -101,15 +98,18 @@ body {
   margin-bottom: 0;
   max-width: 660px;
 }
+
 .container{
 margin: 20px 0;
 padding: 30px;
 box-sizing: border-box;
 box-shadow: 0 0 10px rgba(41,41,41,0.3)
 }
+
 h3{
   text-align: center;
 }
+
 form input, form textarea{
   display: block;
   margin-top: 0em;
@@ -117,6 +117,7 @@ form input, form textarea{
   margin: 5px 0 15px;
   padding: 10px 0px 10px 0px;
 }
+
 form input[type="submit"]{
   font-size: 20px;
   border: 0;

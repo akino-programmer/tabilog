@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Name
+  
+photo-comment
 
-Things you may want to cover:
+* Description
 
-* Ruby version
+This app allows you to post an image and comment on it.
+The logged-in user can post, edit, delete, and comment on images.
+Users who are not logged in can view images and comments.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Requirement
+ruby version: 2.5.1
+ruby on rails: 5.2.3
