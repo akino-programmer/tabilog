@@ -1,7 +1,7 @@
  <!DOCTYPE html>
   <html>
     <head>
-      <title>フォトこめ</title>
+      <title>たびログ</title>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
@@ -10,7 +10,7 @@
     <body>
 <header class="header">
     <div class="header__bar">
-      <h1 class="head__bar__title"><a href="/">フォトこめ</a></h1>
+      <h1 class="head__bar__title"><a href="/">たびログ</a></h1>
       <% if user_signed_in? %>
         <div class="head__bar__right__side">
                 <a href="/users/<%= current_user.id %>">マイページ</a>
