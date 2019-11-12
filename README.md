@@ -25,3 +25,33 @@ DB：MySQL
 ページネーション使用gem：kaminari
 単体テスト、統合テスト使用gem：rspec-rails、factory_bot_rails
 自動デプロイ使用gem：unicorn、capistrano
+
+DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false, unique: true|
+|email|string|null: false, unique: true, default: ""|
+### Association
+- has_many :tweets
+- has_many :comments
+
+## tweetsテーブル
+|Column|Type|
+|------|----|
+|text|text|
+|image|text|
+|user_id|integer|
+### Association
+- belongs_to :user
+- has_many :comments
+
+## commentsテーブル
+|Column|Type|
+|------|----|
+|text|text|
+|user_id|integer|
+|tweet_id|integer|
+### Association
+- belongs_to :user
+- belongs_to :tweet
