@@ -1,59 +1,13 @@
 .comment__rate__form{
   height: 20px;
   width: 30px;
-  // margin: 50px;
-  // text-align: center;
-  // font-family: 'Open Sans', sans-serif;
-  // background: #f2fbff;
 }
-
-// .rating-star:before {
-//   content: "\2605\2605\2605\2605\2605";
-// }
-
-
-
-// .rating-star>.star-actived, .rating-star>.star-distribution {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   overflow: hidden;
-//   width: 0%;
-
-//   color: #dbc832;
-//   font-style: normal;
-//   word-wrap: normal;
-// }
-
-// .rating-star {
-//   color: #F5A624;
-//   float: right;
-//   text-shadow: 0 0 0 #fff;
-//   line-height: 1.5;
-// }
-// .star-actived,.rating-star {
-//   line-height: 1.5;
-// }
-// .user_review {
-//   font-size: 12px;
-//   clear: both;
-// }
-
-
-// body {
-//   margin: 50px;
-//   text-align: center;
-//   font-family: 'Open Sans', sans-serif;
-//   background: #f2fbff;
-//   }
-
   .comments{
     text-align: center;
-
   }
   
   .star-ratings-sprite {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  background: url("star-rating-sprite.png") repeat-x;
   font-size: 0;
   height: 21px;
   line-height: 0;
@@ -63,7 +17,7 @@
   margin: 0 auto;
   }
   .star-ratings-sprite-rating {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  background: url("star-rating-sprite.png") repeat-x;
   background-position: 0 100%;
   float: left;
   height: 21px;
