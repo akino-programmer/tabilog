@@ -1,6 +1,10 @@
 .comment__rate__form{
   height: 20px;
   width: 30px;
+  // margin: 50px;
+  // text-align: center;
+  // font-family: 'Open Sans', sans-serif;
+  // background: #f2fbff;
 }
 
 // .rating-star:before {
@@ -36,14 +40,17 @@
 // }
 
 
-body {
-  margin: 50px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  background: #f2fbff;
-  }
+// body {
+//   margin: 50px;
+//   text-align: center;
+//   font-family: 'Open Sans', sans-serif;
+//   background: #f2fbff;
+//   }
 
-  
+  .comments{
+    text-align: center;
+
+  }
   
   .star-ratings-sprite {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
@@ -56,8 +63,7 @@ body {
   margin: 0 auto;
   }
   .star-ratings-sprite-rating {
-  // background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
-
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
   background-position: 0 100%;
   float: left;
   height: 21px;
