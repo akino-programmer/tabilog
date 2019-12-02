@@ -12,7 +12,8 @@
 投稿画像の詳細機能  
 ページネーション機能  
 投稿画像へのコメント機能  
-単体テスト・統合テスト  
+単体テスト・統合テスト
+☆評価機能  
 
 * アプリケーション内で使用している技術一覧  
 マークアップ・プログラミング言語：HTML、CSS、Ruby  
@@ -52,6 +53,7 @@ DB：MySQL
 |text|text|
 |user_id|integer|
 |tweet_id|integer|
+|rate|integer|
 ### Association
 - belongs_to :user
 - belongs_to :tweet
