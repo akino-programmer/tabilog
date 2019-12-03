@@ -1,2 +1,159 @@
-def management
-end
+<div class="contents__main">
+  <p>管理画面</p>
+
+  <div class="container">
+    <div class="container__box">
+      <div class="container__box__column">
+        <h5>ID</h5>
+        <h5>Name</h5>
+        <h5>E-mail</h5>
+        <h5>登録日</h5>
+        <h5>投稿数</h5>
+        <h5>コメント数</h5>
+      </div>
+     
+    <div class="container__box__information">
+      <div class="container__box__information__id">
+        <% @users.each do |user| %>
+          <div class="container__box__information__id__individual">
+            <%= user.id %><br />
+          </div>
+        <% end %>
+      </div>
+
+
+      <div class="container__box__information__nickname">
+        <% @users.each do |user| %>
+          <div class="container__box__information__nickname__individual">
+            <%= user.nickname %><br />
+          </div>
+        <% end %>
+      </div>
+
+
+      <div class="container__box__information__email">
+        <% @users.each do |user| %>
+          <div class="container__box__information__email__individual">
+            <%= user.email %><br />
+          </div>
+        <% end %>
+      </div>
+
+
+      <div class="container__box__information__created_at">
+        <% @users.each do |user| %>
+          <div class="container__box__information__created_at__individual">
+            <%= user.created_at %><br />
+          </div>
+        <% end %>
+      </div>
+
+
+
+
+
+
+      <div class="container__box__information__user_tweet_id">
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 1) %>
+              <%= @user_id_1_tweet %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 2) %>
+              <%= @user_id_2_tweet %><br />
+             <% else %>
+             0
+            <% end %>
+          </div>
+
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 3) %>
+              <%= @user_id_3_tweet %><br />
+             <% else %>
+             0
+            <% end %>
+          </div>
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 4) %>
+              <%= @user_id_4_tweet %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 5) %>
+              <%= @user_id_5_tweet %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+          </div>
+  
+
+
+        <div class="container__box__information__user_comment_id">
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 1) %>
+              <%= @user_id_1_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+  
+          <div class="container__box__information__user_comment_id">
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 2) %>
+              <%= @user_id_2_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+
+          <div class="container__box__information__user_comment_id">
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 3) %>
+              <%= @user_id_3_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+
+          <div class="container__box__information__user_comment_id">
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 4) %>
+              <%= @user_id_4_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+
+          <div class="container__box__information__user_comment_id">
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 5) %>
+              <%= @user_id_5_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+  
+  
+  
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  </div>
+</div>

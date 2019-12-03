@@ -1,3 +1,73 @@
-// Place all the styles related to the management controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.contents__main{
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1000px;
+}
+
+h5{
+  display:table-cell;
+  padding-left: 15px;
+  padding-right: 85px;
+
+}
+
+.container__box__information{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: solid 1px #000000;
+  display: flex;
+}
+
+.container__box__information__id{
+  width: 5%;
+  text-align: center;
+}
+
+.container__box__information__id__individual{
+  border: solid 1px #000000;
+}
+
+.container__box__information__nickname{
+  width: 15%;
+}
+
+.container__box__information__nickname__individual{
+  border: solid 1px #000000;
+}
+
+.container__box__information__email{
+  width: 25%;
+}
+
+.container__box__information__email__individual{
+  border: solid 1px #000000;
+}
+
+.container__box__information__created_at{
+  width: 40%;
+}
+
+.container__box__information__created_at__individual{
+  border: solid 1px #000000;
+}
+
+
+.container__box__information__user_tweet_id_1__individual{
+  width: 50px;
+  height: 24px;
+  border: solid 1px #000000;
+  text-align: center;
+}
+
+
+.container__box__information__user_comment_id_1__individual{
+  width: 50px;
+  height: 24px;
+  border: solid 1px #000000;
+  text-align: center;
+}
