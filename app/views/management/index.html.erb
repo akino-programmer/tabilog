@@ -96,6 +96,14 @@
               0
             <% end %>
           </div>
+
+          <div class="container__box__information__user_tweet_id_1__individual">
+            <% if Tweet.find_by(user_id: 6) %>
+              <%= @user_id_6_tweet %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
           </div>
   
 
@@ -109,7 +117,6 @@
             <% end %>
           </div>
   
-          <div class="container__box__information__user_comment_id">
           <div class="container__box__information__user_comment_id_1__individual">
             <% if Comment.find_by(user_id: 2) %>
               <%= @user_id_2_comment %><br />
@@ -118,7 +125,6 @@
             <% end %>
           </div>
 
-          <div class="container__box__information__user_comment_id">
           <div class="container__box__information__user_comment_id_1__individual">
             <% if Comment.find_by(user_id: 3) %>
               <%= @user_id_3_comment %><br />
@@ -127,7 +133,6 @@
             <% end %>
           </div>
 
-          <div class="container__box__information__user_comment_id">
           <div class="container__box__information__user_comment_id_1__individual">
             <% if Comment.find_by(user_id: 4) %>
               <%= @user_id_4_comment %><br />
@@ -136,7 +141,6 @@
             <% end %>
           </div>
 
-          <div class="container__box__information__user_comment_id">
           <div class="container__box__information__user_comment_id_1__individual">
             <% if Comment.find_by(user_id: 5) %>
               <%= @user_id_5_comment %><br />
@@ -144,16 +148,18 @@
               0
             <% end %>
           </div>
-  
-  
-  
+
+          <div class="container__box__information__user_comment_id_1__individual">
+            <% if Comment.find_by(user_id: 6) %>
+              <%= @user_id_6_comment %><br />
+             <% else %>
+              0
+            <% end %>
+          </div>
+        </div>
+
       </div>
-
     </div>
-
-
-
-
   </div>
   </div>
 </div>
