@@ -1,6 +1,18 @@
 <div class="contents__row">
  <div class="container">
   <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
+    
+  <% if @tweet.comments.present? %>
+    <span class="rating-star">
+      <div class="star-ratings-sprite"><span style="width:<%= @tweet.comments.average(:rate).round %>0%" class="star-ratings-sprite-rating"></span></div>
+    </span>
+  <% else %>
+    <span class="rating-star">
+      <i class="star-actived rate-0"></i>
+    </span>
+  <% end %>
+
+
     <% if user_signed_in? && current_user.id == @tweet.user_id %>
       <ul class="more_list">
         <li>
@@ -25,7 +37,7 @@
   <% if current_user %>
       <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
         <textarea cols="30" name="text" placeholder="コメントする" rows="2"></textarea>
-              <div class="comment__rate">
+        <div class="comment__rate">
           <label for="rate">評価(10段階評価)</label>
           <input class="comment__rate__form" type="number" id="name" name="rate" max="10" min="1" value="1">
         </div>
@@ -40,7 +52,7 @@
             <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
             <%= comment.text %>
           </p>
-            <p class="text-small">
+           <p class="text-small">
              <div class="star-ratings-sprite"><span style="width:<%= comment.rate %>0%" class="star-ratings-sprite-rating"></span></div>
            </p>
         <% end %>
