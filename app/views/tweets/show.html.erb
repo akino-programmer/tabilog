@@ -25,6 +25,10 @@
   <% if current_user %>
       <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
         <textarea cols="30" name="text" placeholder="コメントする" rows="2"></textarea>
+              <div class="comment__rate">
+          <label for="rate">評価(10段階評価)</label>
+          <input class="comment__rate__form" type="number" id="name" name="rate" max="10" min="1" value="1">
+        </div>
         <input type="submit" value="SENT">
       <% end %>
     <% end %>
@@ -36,6 +40,9 @@
             <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
             <%= comment.text %>
           </p>
+            <p class="text-small">
+             <div class="star-ratings-sprite"><span style="width:<%= comment.rate %>0%" class="star-ratings-sprite-rating"></span></div>
+           </p>
         <% end %>
       <% end %>
     </div>
